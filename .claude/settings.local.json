@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:e2b.dev)",
+      "Bash(npm install react-resizable-panels framer-motion react-markdown rehype-highlight @xterm/xterm @xterm/addon-fit)",
+      "Bash(test -f c:/Users/vedan/Downloads/aws2/backend/.env.example)",
+      "Bash(npx next build)",
+      "Bash(node -e \"const p = require\\(''react-resizable-panels''\\); console.log\\(Object.keys\\(p\\).join\\('', ''\\)\\)\")",
+      "Bash(npm ls react-resizable-panels)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(python -c \"from agents.supervisor import supervisor; from agents.frontend_agent import frontend_agent; from agents.integration_agent import integration_agent; from agents.design_standards import DESIGN_QUALITY_PROMPT; print\\(''All agent imports OK''\\)\")",
+      "Bash(python -c \"from agents.supervisor import supervisor; from agents.frontend_agent import frontend_agent; from agents.qa_agent import qa_agent; from sandbox.executor import execute_code; from graph.orchestrator import build_graph; print\\(''All imports OK''\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"from agents.qa_agent import qa_agent; print\\(''qa_agent OK''\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"from sandbox.executor import execute_code; print\\(''executor OK''\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"from agents.backend_agent import backend_agent; print\\(''backend_agent OK''\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"from agents.frontend_agent import frontend_agent; print\\(''frontend_agent OK''\\)\")",
+      "Bash(.venv/Scripts/python.exe -m uvicorn main:app --host 0.0.0.0 --port 8000)",
+      "Bash(.venv/Scripts/pip.exe show e2b)",
+      "Bash(netstat -ano)",
+      "Bash(python -c \"from bedrock_models import BEDROCK_MODELS; print\\(f''{len\\(BEDROCK_MODELS\\)} models loaded''\\)\")",
+      "Bash(python -c \"from build_host import build_and_deploy; print\\(''imports OK''\\)\")",
+      "Bash(uvicorn main:app --host 0.0.0.0 --port 8000 --reload)",
+      "Bash(python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload)",
+      "Bash(python -c \":*)"
+    ]
+  }
+}

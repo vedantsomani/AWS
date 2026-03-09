@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Node.js
+node_modules/
+.next/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build outputs
+*.js.map
+
+# Environment files with secrets
+.env
+.env.local
+.env.production
+backend/.env
+
+# Temp/debug files
+backend/tmp_debug_e2b.py
+tmp_*.py
